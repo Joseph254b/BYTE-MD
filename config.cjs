@@ -3,7 +3,110 @@ const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
 module.exports = {
-  "SESSION_ID": "Byte;;;eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoidURHc0ptSzJhN21oclQ2VFJYVVl2Y2NiN0JQMURRemRwbzhvdWM4VXEwTT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiTG1YUXlFK3lTRmNlZ2ROMUJqZlFYc01yTUhJSWd3YXhEWU9tRnJublQyQT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJrSXcvZTRIVzNLL3ZRNEpvNk1zVHIrVi9Ga0Q0NHRERXYyNEVDQlpNUm5vPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJ5SUx0TTVud1FpdERua0wzazQvVDNFZUlRUWwvZU5wT2tjakIxYkVVaGlzPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InNEbUJ3Nzltamc3VmpEYi85NmdPdXQzMXNOeFFwOCs3MCtYaUkzbVFaMGM9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlNtbFo4eHNPMnJySGZuZ1o3N3NzdUFLNi93WXNLRHFSWXBteUhNRGJuazA9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoibUtGQlFnZjIrcUowdTVqREVZeEUyanhnOWtlcUFwSkNGM0RNTUt5WDBVRT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiNVptLzBqeTk0QUN5eDZUNnBsZ2hWSEdlTE4xYjZ4djg2eGhwNjBpb1kxTT0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImVMVVdGbzcycVRFUmx6dVVoMU03b0tZS3dyaXNaQmRnMHlGQmErNzk5Y1RTQk1mVTQ1WmdqVWpIekhUWTF4VFhkUnJ2WmllQjZmS2dNNzBQUHRzMkN3PT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTMyLCJhZHZTZWNyZXRLZXkiOiI3WnliUmFuTWZIYzZEVFpKazhZVnArSEhETjZEZFArd0VrZEZVRGF4dmRBPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W3sia2V5Ijp7InJlbW90ZUppZCI6IjkyMzA3MjM4MDM4MEBzLndoYXRzYXBwLm5ldCIsImZyb21NZSI6dHJ1ZSwiaWQiOiJENkNCRjAzODM0MzREQzBGNjIyNDI1NjVDMjE1MzhEMyJ9LCJtZXNzYWdlVGltZXN0YW1wIjoxNzM0MTc1OTU5fSx7ImtleSI6eyJyZW1vdGVKaWQiOiI5MjMwNzIzODAzODBAcy53aGF0c2FwcC5uZXQiLCJmcm9tTWUiOnRydWUsImlkIjoiODdFQ0ZEQUYwRjU0QUQ5RDQzMDk1MDRBMEU5ODNDRjYifSwibWVzc2FnZVRpbWVzdGFtcCI6MTczNDE3NTk1OX1dLCJuZXh0UHJlS2V5SWQiOjMxLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6MzEsImFjY291bnRTeW5jQ291bnRlciI6MSwiYWNjb3VudFNldHRpbmdzIjp7InVuYXJjaGl2ZUNoYXRzIjpmYWxzZX0sImRldmljZUlkIjoiWWI1cFpvRjFRTm1yV01uT0NEMXdKZyIsInBob25lSWQiOiI2NjI5ZDczYy1mMjdkLTRhMTYtODQ3OC03OGE5ZGEyMzM1ZDMiLCJpZGVudGl0eUlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQzd1S2djV050bDZLL2I0NFoyY2xnc09tK3VZPSJ9LCJyZWdpc3RlcmVkIjp0cnVlLCJiYWNrdXBUb2tlbiI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InpDMGRwOFNuUlB3WGt0RHFBOXE4UHN4bzk0Zz0ifSwicmVnaXN0cmF0aW9uIjp7fSwicGFpcmluZ0NvZGUiOiJHOEgxVkYxUSIsIm1lIjp7ImlkIjoiOTIzMDcyMzgwMzgwOjUyQHMud2hhdHNhcHAubmV0IiwibmFtZSI6IuOFpCJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDSjNEMkp3SEVNYlo5Ym9HR0FJZ0FDZ0EiLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoidXRoS3RGY1JkTUdVUFlySnl4VjJXYUJmTm91bHl0R0JoQnVra1pOYzRCRT0iLCJhY2NvdW50U2lnbmF0dXJlIjoibU4ybmxQNkVDbWt6N0RLU3ZBUVFhcWozNHprRWR4SVViOHN3V1lmekZ4SFk1cyt3U3dFVnpkV2w5ZUlqWE9MR3M0ekI3YnBZY243MlFOYW8xdVhVQWc9PSIsImRldmljZVNpZ25hdHVyZSI6Im5oNjhINzZaTlA2OHp3Z2hidk84UE1kYi9mZTdwMUJibStYRGFiYmx0Sy80NzR0VTdETTZvQzE2ODdUMHVmWTBHRHlhZDZXNGUvalJLNHlxSWdMZ0JRPT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiOTIzMDcyMzgwMzgwOjUyQHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQmJyWVNyUlhFWFRCbEQyS3ljc1ZkbG1nWHphTHBjclJnWVFicEpHVFhPQVIifX1dLCJwbGF0Zm9ybSI6InNtYmEiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3MzQxNzU5NTUsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBS2E0In0=",
+  "SESSION_ID": "/* Copyright (C) 2020 Yusuf Usta.
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+WhatsAsena - Yusuf Usta
+*/
+
+const { Sequelize } = require("sequelize")
+const fs = require("fs")
+if (fs.existsSync("config.env"))
+  require("dotenv").config({ path: "./config.env" })
+
+// Özel Fonksiyonlarımız
+function convertToBool(text, fault = "true") {
+  return text === fault ? true : false
+}
+
+DATABASE_URL =
+  process.env.DATABASE_URL === undefined
+    ? "./whatsasena.db"
+    : process.env.DATABASE_URL
+DEBUG =
+  process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG)
+
+module.exports = {
+  VERSION: "v1.2.8",
+  SESSION:
+    process.env.ASENA_SESSION === undefined ? "" : process.env.ASENA_SESSION,
+  EXT: process.env.EXT === undefined ? undefined : process.env.EXT,
+  LANG:
+    process.env.LANGUAGE === undefined
+      ? "EN"
+      : process.env.LANGUAGE.toUpperCase(),
+  HANDLERS: process.env.HANDLERS === undefined ? "^[.]" : process.env.HANDLERS,
+  SEND_READ:
+    process.env.SEND_READ === undefined
+      ? false
+      : convertToBool(process.env.SEND_READ),
+  BRANCH: "master",
+  HEROKU: {
+    HEROKU:
+      process.env.HEROKU === undefined
+        ? false
+        : convertToBool(process.env.HEROKU),
+    API_KEY:
+      process.env.HEROKU_API_KEY === undefined
+        ? ""
+        : process.env.HEROKU_API_KEY,
+    APP_NAME:
+      process.env.HEROKU_APP_NAME === undefined
+        ? ""
+        : process.env.HEROKU_APP_NAME,
+  },
+  DATABASE_URL: DATABASE_URL,
+  DATABASE:
+    DATABASE_URL === "./whatsasena.db"
+      ? new Sequelize({
+          dialect: "sqlite",
+          storage: DATABASE_URL,
+          logging: DEBUG,
+        })
+      : new Sequelize(DATABASE_URL, {
+          host: "xxxxxx.eu-west-1.compute.amazonaws.com",
+          dialect: "postgres",
+          ssl: true,
+          protocol: "postgres",
+          logging: DEBUG,
+          dialectOptions: {
+            native: true,
+            ssl: { require: true, rejectUnauthorized: false },
+          },
+        }),
+  NO_ONLINE:
+    process.env.NO_ONLINE === undefined
+      ? true
+      : convertToBool(process.env.NO_ONLINE),
+  CLR_SESSION:
+    process.env.CLR_SESSION === undefined
+      ? false
+      : convertToBool(process.env.CLR_SESSION),
+  SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
+  DEBUG: DEBUG,
+  REMOVEBG:
+    process.env.REMOVEBG_KEY === undefined ? "false" : process.env.REMOVEBG_KEY,
+  WARN_COUNT: process.env.WARN_COUNT === undefined ? 3 : process.env.WARN_COUNT,
+  WARN_MSG:
+    process.env.WARN_MSG === undefined ? "Ok bie" : process.env.WARN_MSG,
+  ANTIJID: process.env.ANTIJID === undefined ? "" : process.env.ANTIJID,
+  STICKER_PACKNAME:
+    process.env.STICKER_PACKNAME === undefined
+      ? "🥰,lyfe00011"
+      : process.env.STICKER_PACKNAME,
+  BRAINSHOP:
+    process.env.BRAINSHOP === undefined
+      ? "159501,6pq8dPiYt7PdqHz3"
+      : process.env.BRAINSHOP,
+  DIS_BOT:
+    process.env.DISABLE_BOT === undefined ? "null" : process.env.DISABLE_BOT,
+  FIND_API_KEY:
+    process.env.FIND_API_KEY === undefined
+      ? "null"
+      : process.env.FIND_API_KEY,
+}",
   "ALIVE_IMG": "https://raw.githubusercontent.com/HyHamza/HyHamza/refs/heads/main/Images/logo.jpg",
   "PREFIX": ".",
   "AUTO_READ_STATUS": true,
